@@ -7,7 +7,7 @@ pipeline {
                 echo 'Pipeline for Python'
             }
         }
-        stage('Migration') {
+        stage('Build') {
             steps {
                 echo 'python helloworld.py'
             }
