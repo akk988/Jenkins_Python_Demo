@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Build') {
             steps {
-                echo 'python helloworld.py'
+                echo 'python'
             }
         }
     }
