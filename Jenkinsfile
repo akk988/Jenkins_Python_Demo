@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello Python') {
+        stage('echo command') {
             steps {
                 echo 'Pipeline for Python'
             }
