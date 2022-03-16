@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Build') {
             steps {
-                echo '\kafka\examples\ docker-compose up'
+                echo 'python helloworld.py'
             }
         }
     }
