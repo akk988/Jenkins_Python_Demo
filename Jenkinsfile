@@ -1,5 +1,5 @@
 pipeline {
-    agent none
+    agent { label 'i5giobox || jetson-nano' }
 
     stages {
         stage('echo command') {
