@@ -1,17 +1,18 @@
 pipeline {
-    agent { 
-        label 'i5giobox'
-    }
-
+    agent none
     stages {
         stage('echo command') {
             steps {
                 echo 'Pipeline for Python'
             }
         }
-        stage('Build') {
+        stage('Test on Linux') {
+            agent { 
+                label 'i5giobox'
+            }
             steps {
-                echo 'python helloworld.py'
+                unstash 'app' 
+                sh 'echo 'python helloworld.py'
             }
         }
     }
