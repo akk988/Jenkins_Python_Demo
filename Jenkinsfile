@@ -1,5 +1,5 @@
 pipeline {
-    agent all
+    agent none
 
     stages {
         stage('echo command') {
