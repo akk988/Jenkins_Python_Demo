@@ -12,7 +12,7 @@ pipeline {
             }
             steps {
                 unstash 'app' 
-                sh 'echo 'python helloworld.py'
+                sh 'echo python helloworld.py'
             }
         }
     }
