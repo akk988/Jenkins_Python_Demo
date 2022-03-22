@@ -1,4 +1,5 @@
 pipeline {
+    agent { label 'i5GioBOX||jetson-nano' }
     stages {
         stage('echo command') {
             steps {
@@ -6,11 +7,7 @@ pipeline {
             }
         }
         stage('Test on Linux') {
-            agent { 
-                label 'i5GioBOX'
-            }
             steps {
-                unstash 'app' 
                 sh 'echo python helloworld.py'
             }
         }
